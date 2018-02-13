@@ -5,7 +5,7 @@ class ParallaxLandscapeLayer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            posx: parseInt(this.props.x),
+            posx: parseFloat(this.props.x),
             repeat: true,
         };
 
@@ -19,12 +19,12 @@ class ParallaxLandscapeLayer extends Component {
                 }
                 if (this.props.move === 'right' && this.state.repeat === true){
                     this.setState(previousState => {
-                        return { posx: previousState.posx + parseInt(this.props.speed) };
+                        return { posx: previousState.posx + parseFloat(this.props.speed) };
                     });
                 }
                 if (this.props.move === 'left' && this.state.repeat === true ){
                     this.setState(previousState => {
-                        return { posx: previousState.posx - parseInt(this.props.speed) };
+                        return { posx: previousState.posx - parseFloat(this.props.speed) };
                     });
                 }
 

@@ -64,8 +64,8 @@ class ParallaxLandscape extends Component {
                     y="10%"
                     move="right"
                     loop={true}
-                    speed="10"
-                    level={2}
+                    speed="1"
+                    level={10}
                 />
 
                 <ParallaxLandscapeLayer
@@ -74,12 +74,12 @@ class ParallaxLandscape extends Component {
                     stage={this.state.stage}
                     layer_name="hill"
                     img={background}
-                    x={0}
+                    x={1000}
                     y={0}
                     move={false}
                     loop={true}
                     speed="0"
-                    level={3}
+                    level={2}
                 />
                 </div>
 
