@@ -36,7 +36,7 @@ class ParallaxLandscapeLayer extends Component {
 
         return (
             <div>
-                <Motion style={{x: spring(this.props.stage*this.props.scrollX,{stiffness: 100, damping: 13})}}>
+                <Motion style={{x: spring(this.props.stage*this.props.scrollX,{stiffness: 60, damping: 15,})}}>
                     {({x}) =>
                         <div className={this.props.layer_name} style={{
                             position: 'absolute',
@@ -47,8 +47,9 @@ class ParallaxLandscapeLayer extends Component {
                             zIndex: this.props.level*(-10),
                             top: this.props.y,
                             left: this.state.posx,
-                            WebkitTransform: `translate3d(${-x/this.props.level}px, 0, 0)`,
-                            transform: `translate3d(${-x/this.props.level}px, 0, 0)`,
+                            WebkitTransform: `translateX(${-x/this.props.level}px)`,
+                            transform: `translateX(${-x/this.props.level}px)`,
+
                         }}/>
                     }
                 </Motion>

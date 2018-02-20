@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <ParallaxLandscape
-            width={3900}
+            width={5000}
             height={3000}      // height
             visibleX={1500}  // visible width px amount ( foreground moves visibleX px on click)
             visibleY={1000}

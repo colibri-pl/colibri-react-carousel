@@ -51,7 +51,7 @@ class ParallaxLandscape extends Component {
 
                 <div style={LandscapeStyle}>
                     <ParallaxLandscapeLayer
-                        width={this.props.width}      // layer visible state ( using for loops )
+                        width={this.props.width}
                         height={this.props.height}
                         scrollX={this.props.visibleX}    // amount to move per stage
                         stage={this.state.stage}        // stage of animation
@@ -88,7 +88,7 @@ class ParallaxLandscape extends Component {
                         scrollX={this.props.visibleX}
                         stage={this.state.stage}
                         layer_name="front1"
-                        backgroundRepeat="no-repeat"
+                        backgroundRepeat="repeat-x"
                         img={front01}
                         x={0}
                         y={0}
@@ -104,7 +104,7 @@ class ParallaxLandscape extends Component {
                         scrollX={this.props.visibleX}
                         stage={this.state.stage}
                         layer_name="front2"
-                        backgroundRepeat="no-repeat"
+                        backgroundRepeat="repeat-x"
                         img={front02}
                         x={0}
                         y={0}
@@ -152,7 +152,7 @@ class ParallaxLandscape extends Component {
                         scrollX={this.props.visibleX}
                         stage={this.state.stage}
                         layer_name="hill"
-                        backgroundRepeat="no-repeat"
+                        backgroundRepeat="repeat-x"
                         img={back}
                         x={0}
                         y={0}
@@ -168,7 +168,7 @@ class ParallaxLandscape extends Component {
                         scrollX={this.props.visibleX}
                         stage={this.state.stage}
                         layer_name="hill2"
-                        backgroundRepeat="no-repeat"
+                        backgroundRepeat="repeat-x"
                         img={back02}
                         x={-1500}
                         y={0}
@@ -191,7 +191,7 @@ class ParallaxLandscape extends Component {
                         move="false"
                         loop={false}
                         speed="0"
-                        level={3.4}
+                        level={3.5}
                     />
 
                     <ParallaxLandscapeLayer
@@ -207,7 +207,7 @@ class ParallaxLandscape extends Component {
                         move="false"
                         loop={false}
                         speed="0"
-                        level={3.5}
+                        level={4}
                     />
 
                 </div>
