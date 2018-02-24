@@ -14,8 +14,6 @@ import fishingboat from '../images/fishing-boat.png';
 import water from '../images/water.png';
 import back02 from '../images/back-02.png';
 
-
-
 class ParallaxLandscape extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +37,6 @@ class ParallaxLandscape extends Component {
       overflow: 'hidden',
     };
 
-
     return (
       <div className="ParallaxLandscape">
 
@@ -54,7 +51,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}  // amount to move per stage
             stage={this.state.stage}    // stage of animation
-            layer_name="grass"     // layer name
+            layerName="grass"     // layer name
             backgroundRepeat="repeat-x" // for css purposes setting "background-repeat" value
             img={grass13}   // image
             x={0}       // starting position x only numbers(pixels), will parse string into number
@@ -70,7 +67,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="street"
+            layerName="street"
             backgroundRepeat="repeat-x"
             img={street12}
             x={0}
@@ -86,7 +83,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="front1"
+            layerName="front1"
             backgroundRepeat="repeat-x"
             img={front01}
             x={0}
@@ -102,7 +99,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="front2"
+            layerName="front2"
             backgroundRepeat="repeat-x"
             img={front02}
             x={0}
@@ -118,7 +115,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="plane"
+            layerName="plane"
             backgroundRepeat="no-repeat"
             img={plane}
             x={this.props.visibleX-50}  // to start plane from visible state
@@ -134,7 +131,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="boat"
+            layerName="boat"
             backgroundRepeat="no-repeat"
             img={fishingboat}
             x={0}
@@ -150,7 +147,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="hill"
+            layerName="hill"
             backgroundRepeat="repeat-x"
             img={back}
             x={0}
@@ -166,7 +163,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="hill2"
+            layerName="hill2"
             backgroundRepeat="repeat-x"
             img={back02}
             x={-1500}
@@ -182,7 +179,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="water"
+            layerName="water"
             backgroundRepeat="repeat-x"
             img={water}
             x={0}
@@ -198,7 +195,7 @@ class ParallaxLandscape extends Component {
             height={this.props.height}
             scrollX={this.props.visibleX}
             stage={this.state.stage}
-            layer_name="clouds"
+            layerName="clouds"
             backgroundRepeat="repeat-x"
             img={clouds}
             x={0}

@@ -36,7 +36,7 @@ class ParallaxLandscapeLayer extends Component {
       <div>
         <Motion style={{x: spring(this.props.stage*this.props.scrollX,{stiffness: 60, damping: 15,})}}>
           {({x}) =>
-            <div className={this.props.layer_name} style={{
+            <div className={this.props.layerName} style={{
               position: 'absolute',
               background: 'url('+this.props.img+') ',
               backgroundRepeat: this.props.backgroundRepeat,
