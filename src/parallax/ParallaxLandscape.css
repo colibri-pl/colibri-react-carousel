@@ -1,7 +1,16 @@
 .buttonContainer {
-  width: 1000px;
-  z-index: 5000;
-}
-.buttonContainer .btn {
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
 
+}
+.buttonContainer .btnPrev {
+    position:absolute;
+    left:5%;
+    top:50%;
+}
+.buttonContainer .btnNext {
+    position:absolute;
+    left:95%;
+    top:50%;
 }
