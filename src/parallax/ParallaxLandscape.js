@@ -38,17 +38,17 @@ class ParallaxLandscape extends Component {
             <ParallaxLandscapeLayer
                 width={this.props.width}      // width of image
                 height={this.props.height}    // height of image
-                scrollX={this.props.visibleX} // amount to move per stage (for foreground, every
+                scrollX={this.props.visibleX} // amount to move per stage
                 stage={this.state.stage}      // stage of animation
-                layerName="grass"             // layer name
-                backgroundRepeat="repeat-x"   // for css purposes setting "background-repeat" value
-                img={}              // image url
+                layerName="name"              // layer name (div class name for eventual easy targeting)
+                backgroundRepeat="repeat-x"   // for css purposes, setting "background-repeat" value
+                img={URL}           // image url
                 x={0}               // starting position x only numbers(pixels), will parse string into number
                 y={0}               // starting position y can be in string = "10%"
                 move={false}        // can be false, right, left
                 loop={false}        // when the object moves outside the very end, should it appear again on the other side?
                 speed="0"           // speed px per 50ms only for moving objects
-                level={1}           // 1 = foreground, pixel amount to move on click is dependant on it
+                level={1}           // 1 = foreground, pixel amount to move on click is dependant on it (scrollX/level) use floating point numbers
             />
           </div>
 
