@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-import ParallaxLandscape from "./parallax/ParallaxLandscape";
+
+import ParallaxLandscape from "./lib/colibri-parallax-landscape/ParallaxLandscape";
+
+// import './style.css';
 
 class App extends Component {
   render() {
