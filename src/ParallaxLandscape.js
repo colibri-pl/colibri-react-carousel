@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+
 import ParallaxLandscapeLayer from './ParallaxLandscapeLayer.js';
 
-import './ParallaxLandscape.css';
+// import './style.css';
+
+// import './ParallaxLandscape.css';
 
 class ParallaxLandscape extends Component {
   constructor(props) {
@@ -12,11 +15,11 @@ class ParallaxLandscape extends Component {
   }
 
   handleClickNext = () => {
-    this.setState(this.state.stage >= this.props.stages-1 ? {stage:0}:{stage:this.state.stage+1})
-  };
+    this.setState(this.state.stage >= this.props.stages-1 ? {stage:0}:{stage:this.state.stage+1});
+  }
   handleClickPrev = () => {
-    this.setState(this.state.stage <= 0 ? {stage:this.props.stages-1}:{stage:this.state.stage-1})
-  };
+    this.setState(this.state.stage <= 0 ? {stage:this.props.stages-1}:{stage:this.state.stage-1});
+  }
 
   render() {
     let LandscapeStyle = {
