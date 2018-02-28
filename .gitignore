@@ -1,3 +1,6 @@
+# Exclude symlinks to component file(s)
+example/src/lib/colibri-parallax-landscape/
+
 # Logs
 logs
 *.log
